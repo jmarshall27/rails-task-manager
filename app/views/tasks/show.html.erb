@@ -1,9 +1,9 @@
 <h1><%= @task.title %></h1>
 <p><%= @task.details %></p>
 <% if @task.completed %>
-  <i class="far fa-check-square"></i>
+  <p><i class="far fa-check-square"></i> This task is completed<p>
 <% else %>
-  <i class="far fa-square"></i>
+  <p><i class="far fa-square"></i> This task is not completed yet</p>
 <% end %>
 <%= link_to 'Edit task', edit_task_path %>
 <%= link_to "Delete #{@task.title}",
